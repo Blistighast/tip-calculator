@@ -1,0 +1,80 @@
+.tip {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.tip p {
+  font-weight: 700;
+}
+
+.tip button {
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(183, 100%, 15%);
+  margin: 0.4em;
+  padding: 0.5em;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tip button:focus {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.tip button.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip ul {
+  padding: 0;
+}
+
+.tipGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.customTip {
+  justify-content: center;
+  align-self: center;
+}
+
+.customTip input {
+  border: none;
+  border-radius: 4px;
+  background-color: hsl(189, 41%, 97%);
+  padding: 0.5em 0 0.5em 0;
+  width: 100%;
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.customTip :focus {
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.customTip .active {
+  border-color: hsl(172, 67%, 45%);
+  border-style: solid;
+}
+
+.customTip ::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.tip input {
+  font-family: inherit;
+}
+
+@media (max-width: 415px) {
+  .tipGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

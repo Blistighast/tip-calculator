@@ -1,0 +1,102 @@
+.card {
+  margin: 4em;
+  color: inherit;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  color: hsl(186, 14%, 43%);
+  width: 70%;
+  max-width: 900px;
+}
+
+.span {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2em 1em 2em 1em;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.bill input {
+  background: url(../public/icon-dollar.svg) no-repeat;
+  background-position-y: center;
+  background-position-x: 1em;
+  text-align: right;
+  padding: 2px 0 2px 0;
+  font-family: inherit;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  width: 100%;
+}
+
+.bill input:focus {
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.people input {
+  background: url(../public/icon-person.svg) no-repeat;
+  background-position-y: center;
+  background-position-x: 1em;
+  text-align: right;
+  padding: 2px 0 2px 0;
+  font-family: inherit;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  font-size: 20px;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  width: 100%;
+}
+
+.people input:focus {
+  outline-color: hsl(172, 67%, 45%);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: orangered;
+}
+
+.bill input:focus,
+.bill input:active {
+  /* color: #0070f3; */
+  border-color: #0070f3;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 415px) {
+  .card {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+  }
+
+  .span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0; */
+  }
+
+  /* .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
+}
